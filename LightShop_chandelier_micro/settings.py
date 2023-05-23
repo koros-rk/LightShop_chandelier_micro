@@ -49,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'shop.middleware.Authentication.AuthenticationMiddleware',
 ]
 
 ROOT_URLCONF = 'LightShop_chandelier_micro.urls'
