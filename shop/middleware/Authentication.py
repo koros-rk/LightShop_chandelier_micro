@@ -10,7 +10,7 @@ class AuthenticationMiddleware:
         return self.get_response(request)
 
     def process_view(self, request, view_func, view_args, view_kwargs):
-        if request.method == 'POST':
+        if request.method in ['POST', 'PUT', 'PATCH', 'DELETE']:
             if 'Authorization' not in request.headers:
                 return HttpResponseForbidden("Provide authorization credentials")
 
