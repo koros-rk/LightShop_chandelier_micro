@@ -11,4 +11,4 @@ class ProductFilter(filters.FilterSet):
 
     class Meta:
         model = Product
-        fields = ['category']
+        fields = ['category', 'is_remote', 'plafod_count', 'is_led', 'bracing']
